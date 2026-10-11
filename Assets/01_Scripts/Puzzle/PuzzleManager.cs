@@ -3,20 +3,24 @@ using UnityEngine;
 public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private string correctCode = "1234";
+    private bool puzzleSolved = false;
 
     public bool ValidateCode(string code)
     {
-        bool valid = code == correctCode;
-
-        if (valid)
+        if (puzzleSolved)
         {
-            Debug.Log("Código correcto.");
-        }
-        else
-        {
-            Debug.Log("Código incorrecto.");
+            Debug.Log("El puzzle ya fue resuelto.");
+            return true;
         }
 
-        return valid;
+        if (code != correctCode)
+        {
+            Debug.Log("Cï¿½digo incorrecto.");
+            return false;
+        }
+
+        puzzleSolved = true;
+        Debug.Log("Puzzle completado correctamente.");
+        return true;
     }
 }
