@@ -5,6 +5,13 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField] private string correctCode = "1234";
     private bool puzzleSolved = false;
 
+    private void Start()
+    {
+        ValidateCode("0000"); // Codigo incorrecto
+        ValidateCode("1234"); // Codigo correcto
+        ValidateCode("1234"); // Puzzle ya resuelto
+    }
+
     public bool ValidateCode(string code)
     {
         if (puzzleSolved)
@@ -15,7 +22,7 @@ public class PuzzleManager : MonoBehaviour
 
         if (code != correctCode)
         {
-            Debug.Log("C�digo incorrecto.");
+            Debug.Log("Codigo incorrecto.");
             return false;
         }
 
