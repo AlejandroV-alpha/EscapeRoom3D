@@ -16,6 +16,6 @@ public class OldDoorController : MonoBehaviour
 
     public void OpenDoor()
     {
-        Debug.Log("Opening old door");
+        Debug.Log("Opening old door - updated controller");
     }
 }
