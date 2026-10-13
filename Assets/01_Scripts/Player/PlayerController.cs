@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Stadistics")]
-    public float speed = 5f;
+    public float speed = 6f; // Crouch speed modificada por Integrante B
 
     private void Update()
     {
