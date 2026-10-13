@@ -15,8 +15,14 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
+    public void Initialize()
+    {
+        Debug.Log("[GameManager] Inicializando sistemas del juego...");
+    }
+
     public void ObtainKey()
     {
         HasKey = true;
     }
 }
+
