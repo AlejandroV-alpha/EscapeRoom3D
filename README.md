@@ -8,7 +8,7 @@ Proyecto de laboratorio desarrollado con **Git, GitHub, Visual Studio Code y Uni
 
 ## 👥 Integrantes
 
-El equipo organiza el desarrollo mediante ramas Feature y utiliza dev para integrar sus cambios.
+El equipo organiza el desarrollo mediante ramas Feature y utiliza dev para integrar sus cambios siguiendo una enumeracion en los commits.
 
 1. **Alejandro Vidal**
 2. **Bonny Alberto Crespo Romero**
