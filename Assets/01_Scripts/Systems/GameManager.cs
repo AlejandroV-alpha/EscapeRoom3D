@@ -17,8 +17,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Initialize(); // Integrante A inicializa el sistema
+        Initialize(); // Inicialización única y correcta del sistema
     }
+
 
     public void Initialize()
     {
