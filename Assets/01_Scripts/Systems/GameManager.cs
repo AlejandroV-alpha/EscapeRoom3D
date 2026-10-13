@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        Initialize(); // Integrante A inicializa el sistema
+    }
+
     public void Initialize()
     {
         Debug.Log("[GameManager] Inicializando sistemas del juego...");
