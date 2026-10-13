@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Stadistics")]
-    public float speed = 5f;
+    public float speed = 10f; // Sprint speed modificada por Integrante A
 
     private void Update()
     {
