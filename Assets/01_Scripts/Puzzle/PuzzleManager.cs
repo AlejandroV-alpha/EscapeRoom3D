@@ -3,6 +3,8 @@ using UnityEngine;
 public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private string correctCode = "1234";
+    [SerializeField] private int maxAttempts = 3;
+    private int currentAttempts = 0;
     private bool puzzleSolved = false;
 
     private void Start()
@@ -20,9 +22,16 @@ public class PuzzleManager : MonoBehaviour
             return true;
         }
 
+        if (currentAttempts >= maxAttempts)
+        {
+            Debug.LogWarning("Intentos agotados. Reinicia el puzzle.");
+            return false;
+        }
+
         if (code != correctCode)
         {
-            Debug.Log("Codigo incorrecto.");
+            currentAttempts++;
+            Debug.Log($"Codigo incorrecto. Intento {currentAttempts}/{maxAttempts}");
             return false;
         }
 
@@ -30,4 +39,12 @@ public class PuzzleManager : MonoBehaviour
         Debug.Log("Puzzle completado correctamente.");
         return true;
     }
+
+    public void ResetPuzzle()
+    {
+        puzzleSolved = false;
+        currentAttempts = 0;
+        Debug.Log("Puzzle reiniciado.");
+    }
 }
+
