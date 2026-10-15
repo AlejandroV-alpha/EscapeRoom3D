@@ -8,6 +8,8 @@ Proyecto de laboratorio desarrollado con **Git, GitHub, Visual Studio Code y Uni
 
 ## 👥 Integrantes
 
+El equipo organiza el desarrollo mediante ramas Feature y utiliza dev para integrar sus cambios siguiendo una enumeracion en los commits.
+
 1. **Alejandro Vidal**
 2. **Bonny Alberto Crespo Romero**
 3. **Ronald Joel Saavedra Vargas**
@@ -42,3 +44,6 @@ Desarrollar un videojuego de **Escape Room en 3D**, donde el jugador deberá exp
 ---
 
 🎮 **Escape Room 3D** — *Explora, resuelve y escapa.*
+
+## Información del proyecto
+Este Escape Room 3D forma parte del laboratorio de Git, GitHub, Unity y VS Code.

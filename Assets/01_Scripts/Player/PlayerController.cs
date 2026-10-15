@@ -2,11 +2,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
+    [Header("Stadistics")]
+    public float speed = 7f;
+    public float sprintSpeed = 10f; // Integrado de A
+    public float crouchSpeed = 3f;  // Integrado de B
+
 
     private void Update()
     {
         Move();
+        //Debug.Log("Movement system active");
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("Interaction key pressed");
+        }
     }
 
     private void Move()
