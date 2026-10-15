@@ -285,8 +285,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4456165426532230715, guid: ca19be5e5cdf3174e8764f1d3daa71b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 951640440}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4463610047454302177, guid: ca19be5e5cdf3174e8764f1d3daa71b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1361889648}
   m_SourcePrefab: {fileID: 100100000, guid: ca19be5e5cdf3174e8764f1d3daa71b9, type: 3}
 --- !u!1 &261075502
 GameObject:
@@ -501,13 +507,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951640437}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 7, z: -10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_Father: {fileID: 1361889654}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &951640441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +558,30 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &1361889647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4463610047454302177, guid: ca19be5e5cdf3174e8764f1d3daa71b9, type: 3}
+  m_PrefabInstance: {fileID: 108333129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1361889648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361889647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770ce5017e38df848b2f024d08747c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  interactionDistance: 3
+  playerCamera: {fileID: 951640439}
+--- !u!4 &1361889654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4456165426532230715, guid: ca19be5e5cdf3174e8764f1d3daa71b9, type: 3}
+  m_PrefabInstance: {fileID: 108333129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1660194854
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +707,7 @@ GameObject:
   - component: {fileID: 1756958920}
   - component: {fileID: 1756958919}
   - component: {fileID: 1756958918}
+  - component: {fileID: 1756958922}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -777,6 +808,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756958922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756958917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  animator: {fileID: 0}
 --- !u!1 &2107001093
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +915,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 951640440}
   - {fileID: 261075504}
   - {fileID: 1660194858}
   - {fileID: 97300045}
