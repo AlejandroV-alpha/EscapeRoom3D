@@ -4,9 +4,6 @@ public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private string correctCode = "1234";
     [SerializeField] private int maxAttempts = 3;
-
-    [SerializeField] private ChestController chest;
-
     private int currentAttempts = 0;
     private bool puzzleSolved = false;
 
@@ -40,7 +37,6 @@ public class PuzzleManager : MonoBehaviour
         }
 
         puzzleSolved = true;
-        if (chest != null) chest.Unlock();
         Debug.Log("Puzzle completado correctamente.");
         return true;
     }
