@@ -28,7 +28,8 @@ public class PuzzleManager : MonoBehaviour
             return false;
         }
 
-        if (code != correctCode)
+        if (code == null || code.Trim() != correctCode)
+
         {
             currentAttempts++;
             Debug.Log($"Codigo incorrecto. Intento {currentAttempts}/{maxAttempts}");
